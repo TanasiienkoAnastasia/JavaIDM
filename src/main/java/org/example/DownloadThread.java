@@ -28,7 +28,6 @@ public class DownloadThread extends Thread {
 
         try {
             // Files.copy(new URL(this.file.getUrl()).openStream(), Paths.get(this.file.getPath()));
-
             URL url = new URL(this.file.getUrl());
             URLConnection urlConnection = url.openConnection();
             int fileSize = urlConnection.getContentLength();

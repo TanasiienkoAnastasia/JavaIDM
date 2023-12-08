@@ -37,7 +37,7 @@
       </BorderPane>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <VBox layoutX="-33.0" layoutY="-27.0" prefHeight="200.0" prefWidth="207.0" />
-      <TableView fx:id="tableView" layoutX="7.0" layoutY="239.0" prefHeight="446.0" prefWidth="876.0">
+      <TableView fx:id="tableView" layoutX="8.0" layoutY="235.0" prefHeight="359.0" prefWidth="876.0">
         <columns>
           <TableColumn prefWidth="75.0" text="S.NO" />
           <TableColumn prefWidth="75.0" text="File Name" />
@@ -50,5 +50,6 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
+      <Button layoutX="363.0" layoutY="618.0" mnemonicParsing="false" onAction="#removeButtonClicked" prefHeight="26.0" prefWidth="142.0" text="Remove Download" />
    </children>
 </AnchorPane>

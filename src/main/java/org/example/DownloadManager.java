@@ -23,7 +23,6 @@ public class DownloadManager {
     public int index = 0;
     @FXML
     void downloadButtonClicked(ActionEvent event) {
-
         String url = urlTextField.getText().trim();
         String filename = url.substring(url.lastIndexOf("/")+1);
         String status = "STARTING";
@@ -34,6 +33,13 @@ public class DownloadManager {
         DownloadThread thread = new DownloadThread(file, this);
         this.tableView.getItems().add(Integer.parseInt(file.getIndex())-1, file);
         thread.start();
+    }
+
+    @FXML
+    void removeButtonClicked(ActionEvent event) {
+        tableView.getItems().removeAll(
+                tableView.getSelectionModel().getSelectedItems()
+        );
     }
 
     public void updateUI(FileInfo metaFile) {
