@@ -6,7 +6,7 @@ import org.example.DownloadManager;
 
 public class FileInfo {
 
-    private SimpleIntegerProperty index = new SimpleIntegerProperty();
+    private SimpleStringProperty index = new SimpleStringProperty();
     private SimpleStringProperty name = new SimpleStringProperty();
     private SimpleStringProperty url = new SimpleStringProperty();
     private SimpleStringProperty status = new SimpleStringProperty();
@@ -17,7 +17,7 @@ public class FileInfo {
 
     private DownloadManager downloadManagerController;
 
-    public FileInfo(int index, String name, String url, String status, String action, String path) {
+    public FileInfo(String index, String name, String url, String status, String action, String path) {
         this.index.set(index);
         this.name.set(name);
         this.url.set(url);
@@ -26,15 +26,15 @@ public class FileInfo {
         this.path.set(path);
     }
 
-    public int getIndex() {
+    public String getIndex() {
         return index.get();
     }
 
-    public SimpleIntegerProperty integerProperty() {
+    public SimpleStringProperty indexProperty() {
         return index;
     }
 
-    public void setIndex(int index){
+    public void setIndex(String index) {
         this.index.set(index);
     }
 
