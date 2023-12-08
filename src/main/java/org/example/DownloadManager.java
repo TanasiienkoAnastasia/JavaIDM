@@ -10,6 +10,7 @@ import org.example.config.AppConfig;
 import org.example.models.FileInfo;
 
 import java.io.File;
+import java.text.DecimalFormat;
 
 public class DownloadManager {
 
@@ -39,6 +40,8 @@ public class DownloadManager {
         System.out.println(metaFile);
         FileInfo fileInfo = this.tableView.getItems().get(Integer.parseInt(metaFile.getIndex())-1);
         fileInfo.setStatus(metaFile.getStatus());
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+        fileInfo.setPer(decimalFormat.format(metaFile.getPer()));
         this.tableView.refresh();
         System.out.println("_________________________");
     }
@@ -72,7 +75,7 @@ public class DownloadManager {
         per.setCellValueFactory(p -> {
             SimpleStringProperty simpleStringProperty = new SimpleStringProperty();
             simpleStringProperty.set(p.getValue().getPer() + " %");
-            return p.getValue().perProperty();
+            return simpleStringProperty;
         });
 
         TableColumn<FileInfo, String> action = (TableColumn<FileInfo, String>) this.tableView.getColumns().get(5);
