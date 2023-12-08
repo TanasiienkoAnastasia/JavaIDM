@@ -38,11 +38,26 @@ public class DownloadManager {
 
     public void updateUI(FileInfo metaFile) {
         System.out.println(metaFile);
-        FileInfo fileInfo = this.tableView.getItems().get(Integer.parseInt(metaFile.getIndex())-1);
-        fileInfo.setStatus(metaFile.getStatus());
-        DecimalFormat decimalFormat = new DecimalFormat("0.00");
-        fileInfo.setPer(decimalFormat.format(metaFile.getPer()));
-        this.tableView.refresh();
+        try {
+            int index = Integer.parseInt(metaFile.getIndex()) - 1;
+            if (index >= 0 && index < this.tableView.getItems().size()) {
+                FileInfo fileInfo = this.tableView.getItems().get(index);
+                fileInfo.setStatus(metaFile.getStatus());
+                String perValue = metaFile.getPer().replace(',', '.');
+                try {
+                    double parsedPer = Double.parseDouble(perValue);
+                    DecimalFormat decimalFormat = new DecimalFormat("0.00");
+                    fileInfo.setPer(decimalFormat.format(parsedPer));
+                } catch (NumberFormatException e) {
+                    System.err.println("Error parsing 'per' value: " + perValue);
+                }
+                this.tableView.refresh();
+            } else {
+                System.err.println("Invalid index: " + metaFile.getIndex());
+            }
+        } catch (NumberFormatException e) {
+            System.err.println("Error parsing 'index' value: " + metaFile.getIndex());
+        }
         System.out.println("_________________________");
     }
 
