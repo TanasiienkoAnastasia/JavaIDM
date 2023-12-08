@@ -46,7 +46,7 @@ public class DownloadManager {
                 String perValue = metaFile.getPer().replace(',', '.');
                 try {
                     double parsedPer = Double.parseDouble(perValue);
-                    DecimalFormat decimalFormat = new DecimalFormat("0.00");
+                    DecimalFormat decimalFormat = new DecimalFormat("0.0");
                     fileInfo.setPer(decimalFormat.format(parsedPer));
                 } catch (NumberFormatException e) {
                     System.err.println("Error parsing 'per' value: " + perValue);
