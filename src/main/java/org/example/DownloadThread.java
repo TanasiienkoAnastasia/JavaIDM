@@ -4,6 +4,7 @@ import org.example.models.FileInfo;
 
 import java.io.IOException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -24,7 +25,15 @@ public class DownloadThread extends Thread {
         this.manager.updateUI(this.file);
 
         try {
-            Files.copy(new URL(this.file.getUrl()).openStream(), Paths.get(this.file.getPath()));
+            // Files.copy(new URL(this.file.getUrl()).openStream(), Paths.get(this.file.getPath()));
+
+            URL url = new URL(this.file.getUrl());
+            URLConnection urlConnection = url.openConnection();
+            int fileSize = urlConnection.getContentLength();
+            System.out.println("File size: " + fileSize);
+
+            
+
             this.file.setStatus("DONE");
         } catch (IOException e) {
             this.file.setStatus("Failed");
