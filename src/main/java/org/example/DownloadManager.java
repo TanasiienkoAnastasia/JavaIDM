@@ -27,7 +27,7 @@ public class DownloadManager {
         String status = "STARTING";
         String action = "OPEN";
         String path = AppConfig.DOWNLOAD_PATH + File.separator + filename;
-        FileInfo file = new FileInfo((index+1) + "", filename, url, status, action, path);
+        FileInfo file = new FileInfo((index+1) + "", filename, url, status, action, path, "0");
         this.index = this.index+1;
         DownloadThread thread = new DownloadThread(file, this);
         this.tableView.getItems().add(Integer.parseInt(file.getIndex())-1, file);
