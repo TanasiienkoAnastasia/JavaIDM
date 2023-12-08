@@ -53,6 +53,7 @@ public class DownloadThread extends Thread {
                 if(fileSize>0){
                     per=(byteSum/fileSize * 100);
                     System.out.println(per);
+                    this.manager.updateUI(file);
                 }
             }
 
