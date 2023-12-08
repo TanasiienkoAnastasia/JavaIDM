@@ -6,21 +6,24 @@ import org.example.DownloadManager;
 
 public class FileInfo {
 
-    private SimpleIntegerProperty index;
-    private SimpleStringProperty name;
-    private SimpleStringProperty url;
-    private SimpleStringProperty status;
+    private SimpleIntegerProperty index = new SimpleIntegerProperty();
+    private SimpleStringProperty name = new SimpleStringProperty();
+    private SimpleStringProperty url = new SimpleStringProperty();
+    private SimpleStringProperty status = new SimpleStringProperty();
 
-    private SimpleStringProperty action;
+    private SimpleStringProperty action = new SimpleStringProperty();
+
+    private SimpleStringProperty path = new SimpleStringProperty();
 
     private DownloadManager downloadManagerController;
 
-    public FileInfo(int index, String name, String url, String status, String action) {
+    public FileInfo(int index, String name, String url, String status, String action, String path) {
         this.index.set(index);
         this.name.set(name);
         this.url.set(url);
         this.status.set(status);
         this.action.set(action);
+        this.path.set(path);
     }
 
     public int getIndex() {
@@ -81,5 +84,28 @@ public class FileInfo {
 
     public void setAction(String action) {
         this.action.set(action);
+    }
+
+    public String getPath() {
+        return path.get();
+    }
+
+    public SimpleStringProperty pathProperty() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path.set(path);
+    }
+
+    public String toString(){
+        return "FileInfo{" +
+                "index" + index +
+                ", name=" + name +
+                ", url=" + url +
+                ", status=" + status +
+                ", action=" + action +
+                ", path" + path +
+                '}';
     }
 }
