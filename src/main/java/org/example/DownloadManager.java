@@ -1,5 +1,6 @@
 package org.example;
 
+import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
@@ -67,7 +68,14 @@ public class DownloadManager {
             return p.getValue().statusProperty();
         });
 
-        TableColumn<FileInfo, String> action = (TableColumn<FileInfo, String>) this.tableView.getColumns().get(4);
+        TableColumn<FileInfo, String> per = (TableColumn<FileInfo, String>) this.tableView.getColumns().get(4);
+        per.setCellValueFactory(p -> {
+            SimpleStringProperty simpleStringProperty = new SimpleStringProperty();
+            simpleStringProperty.set(p.getValue().getPer() + " %");
+            return p.getValue().perProperty();
+        });
+
+        TableColumn<FileInfo, String> action = (TableColumn<FileInfo, String>) this.tableView.getColumns().get(5);
         action.setCellValueFactory(p -> {
             return p.getValue().actionProperty();
         });
