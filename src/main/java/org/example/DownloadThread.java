@@ -53,6 +53,7 @@ public class DownloadThread extends Thread {
                 if(fileSize>0){
                     per=(byteSum/fileSize * 100);
                     System.out.println(per);
+                    this.file.setPer(per + "");
                     this.manager.updateUI(file);
                 }
             }
@@ -60,6 +61,7 @@ public class DownloadThread extends Thread {
             fos.close();
             bufferedInputStream.close();
 
+            this.setName(100 + "");
             this.file.setStatus("DONE");
         } catch (IOException e) {
             this.file.setStatus("Failed");
