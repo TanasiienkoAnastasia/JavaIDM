@@ -3,14 +3,22 @@ package org.example;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import org.example.config.AppConfig;
 import org.example.models.FileInfo;
 
+import java.awt.*;
 import java.io.File;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.text.DecimalFormat;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class DownloadManager {
 
@@ -19,6 +27,61 @@ public class DownloadManager {
 
     @FXML
     private TextField urlTextField;
+
+    @FXML
+    private Hyperlink firefoxLink;
+
+    @FXML
+    private Hyperlink googleLink;
+
+    @FXML
+    private Hyperlink internetExplorerLink;
+
+    @FXML
+    private Hyperlink operaLink;
+
+
+    @FXML
+    void openFirefoxLink(ActionEvent event) throws URISyntaxException, IOException{
+        System.out.println("Clicked firefox");
+        Desktop.getDesktop().browse(new URI("http://www.firefox.com"));
+    }
+
+    @FXML
+    void openGoogleLink(ActionEvent event) throws URISyntaxException, IOException {
+        System.out.println("Clicked google");
+        Desktop.getDesktop().browse(new URI("http://www.google.com"));
+    }
+
+    @FXML
+    void openInternetExplorerLink(ActionEvent event) throws URISyntaxException, IOException {
+        System.out.println("Internet explorer");
+        Desktop.getDesktop().browse(new URI("http://www.internetexplorer.com"));
+    }
+
+    public static void launchOpera(){
+        try{
+            System.out.println("Launching opera");
+            String commandArr[] = {"C:\\Users\\shepe\\AppData\\Local\\Programs\\Opera\\launcher.exe"};
+            Runtime runtimeObj = Runtime.getRuntime();
+            runtimeObj.exec(commandArr);
+        }
+        catch (IOException ie)
+        {
+            ie.printStackTrace();
+        }
+    }
+    @FXML
+    void openOperaLink(ActionEvent event) throws URISyntaxException, IOException {
+        String osName = System.getProperty("os.name").toLowerCase();
+        System.out.println("Operating System Name : " + osName);
+
+        if (osName.startsWith("windows")){
+            launchOpera();
+        }
+        else
+            System.out.println("Invalid Operating System");
+    }
 
     public int index = 0;
     @FXML
