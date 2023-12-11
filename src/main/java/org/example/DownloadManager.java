@@ -53,10 +53,28 @@ public class DownloadManager {
         Desktop.getDesktop().browse(new URI("http://www.google.com"));
     }
 
+    public static void launchIntenetExplorer(){
+        try{
+            System.out.println("Launching Internet Explorer");
+            String commandArr[] = {"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"};
+            Runtime runtimeObj = Runtime.getRuntime();
+            runtimeObj.exec(commandArr);
+        }
+        catch (IOException ie)
+        {
+            ie.printStackTrace();
+        }
+    }
     @FXML
     void openInternetExplorerLink(ActionEvent event) throws URISyntaxException, IOException {
-        System.out.println("Internet explorer");
-        Desktop.getDesktop().browse(new URI("http://www.internetexplorer.com"));
+        String osName = System.getProperty("os.name").toLowerCase();
+        System.out.println("Operating System Name : " + osName);
+
+        if (osName.startsWith("windows")){
+            launchIntenetExplorer();
+        }
+        else
+            System.out.println("Invalid Operating System");
     }
 
     public static void launchOpera(){
