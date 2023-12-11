@@ -41,16 +41,54 @@ public class DownloadManager {
     private Hyperlink operaLink;
 
 
-    @FXML
-    void openFirefoxLink(ActionEvent event) throws URISyntaxException, IOException{
-        System.out.println("Clicked firefox");
-        Desktop.getDesktop().browse(new URI("http://www.firefox.com"));
+    public static void launchFirefox(){
+        try{
+            System.out.println("Launching Firefox");
+            String commandArr[] = {"\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\""};
+            Runtime runtimeObj = Runtime.getRuntime();
+            runtimeObj.exec(commandArr);
+        }
+        catch (IOException ie)
+        {
+            ie.printStackTrace();
+        }
     }
 
     @FXML
+    void openFirefoxLink(ActionEvent event) throws URISyntaxException, IOException{
+        String osName = System.getProperty("os.name").toLowerCase();
+        System.out.println("Operating System Name : " + osName);
+
+        if (osName.startsWith("windows")){
+            launchFirefox();
+        }
+        else
+            System.out.println("Invalid Operating System");
+    }
+
+
+    public static void launchGoogle(){
+        try{
+            System.out.println("Launching Google");
+            String commandArr[] = {"\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\""};
+            Runtime runtimeObj = Runtime.getRuntime();
+            runtimeObj.exec(commandArr);
+        }
+        catch (IOException ie)
+        {
+            ie.printStackTrace();
+        }
+    }
+    @FXML
     void openGoogleLink(ActionEvent event) throws URISyntaxException, IOException {
-        System.out.println("Clicked google");
-        Desktop.getDesktop().browse(new URI("http://www.google.com"));
+        String osName = System.getProperty("os.name").toLowerCase();
+        System.out.println("Operating System Name : " + osName);
+
+        if (osName.startsWith("windows")){
+            launchGoogle();
+        }
+        else
+            System.out.println("Invalid Operating System");
     }
 
     public static void launchIntenetExplorer(){
