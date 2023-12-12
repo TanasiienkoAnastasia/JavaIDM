@@ -36,7 +36,7 @@
          </center>
       </BorderPane>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <TableView fx:id="tableView" layoutX="8.0" layoutY="235.0" prefHeight="359.0" prefWidth="876.0" style="-fx-background-color: #CBC3E3;">
+      <TableView fx:id="tableView" layoutX="8.0" layoutY="235.0" prefHeight="359.0" prefWidth="876.0">
         <columns>
           <TableColumn prefWidth="75.0" text="S.NO" />
           <TableColumn prefWidth="75.0" text="File Name" />
@@ -71,5 +71,6 @@
             <Font size="18.0" />
          </font>
       </Hyperlink>
+      <Button layoutX="11.0" layoutY="604.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #CCFFCD;" text="Log Out" />
    </children>
 </AnchorPane>
