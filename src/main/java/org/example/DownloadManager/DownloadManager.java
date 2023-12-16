@@ -1,4 +1,4 @@
-package org.example;
+package org.example.DownloadManager;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
@@ -7,18 +7,11 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import org.example.config.AppConfig;
-import org.example.models.FileInfo;
-
-import java.awt.*;
+import org.example.DownloadManager.models.FileInfo;
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
 import java.text.DecimalFormat;
-import java.util.Locale;
-import java.util.ResourceBundle;
 
 public class DownloadManager {
 

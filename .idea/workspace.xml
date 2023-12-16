@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7e4c35-04a8-41c3-bfaa-bdc351b61061" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DownloadManager/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DownloadManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DownloadManager/DownloadManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DownloadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DownloadManager/DownloadThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DownloadManager/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/FileInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DownloadManager/models/FileInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/downloadManager.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/downloadManager.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/signUp.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,21 +54,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/shepe/Documents/RepositoriesForGitHubTanasiienkoAnastasia/JavaIDM",
-    "settings.editor.selected.configurable": "preferences.JavaFX"
+    "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shepe\Documents\RepositoriesForGitHubTanasiienkoAnastasia\JavaIDM\src\main\java\org\example" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+    <configuration name="org.example.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="JavaIDM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.DownloadManager.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,7 +78,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.org.example.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -88,6 +98,11 @@
       <workItem from="1702071548693" duration="80000" />
       <workItem from="1702071692768" duration="1071000" />
       <workItem from="1702329289047" duration="6935000" />
+      <workItem from="1702345787371" duration="27000" />
+      <workItem from="1702386182725" duration="6250000" />
+      <workItem from="1702463740736" duration="38000" />
+      <workItem from="1702738379873" duration="2593000" />
+      <workItem from="1702742773264" duration="2825000" />
     </task>
     <servers />
   </component>

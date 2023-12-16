@@ -1,15 +1,11 @@
-package org.example;
-
-import org.example.models.FileInfo;
+package org.example.DownloadManager;
+import org.example.DownloadManager.models.FileInfo;
 
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class DownloadThread extends Thread {
 

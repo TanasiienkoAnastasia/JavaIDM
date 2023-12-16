@@ -1,8 +1,7 @@
-package org.example.models;
+package org.example.DownloadManager.models;
 
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
-import org.example.DownloadManager;
+import org.example.DownloadManager.DownloadManager;
 
 public class FileInfo {
 
