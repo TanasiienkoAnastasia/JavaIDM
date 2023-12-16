@@ -33,7 +33,10 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="DejaVu Sans Mono" size="18" style="1"/>
+          <text value=""/>
+        </properties>
       </component>
       <component id="fb7e6" class="javax.swing.JLabel">
         <constraints>
@@ -95,7 +98,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="DejaVu Sans Mono" size="18" style="1"/>
+        </properties>
       </component>
       <component id="8283d" class="javax.swing.JTextField" binding="tfPhone">
         <constraints>
@@ -103,7 +108,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="DejaVu Sans Mono" size="18" style="1"/>
+        </properties>
       </component>
       <component id="cb0d6" class="javax.swing.JTextField" binding="tfAddress">
         <constraints>
@@ -111,7 +118,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="DejaVu Sans Mono" size="18" style="1"/>
+        </properties>
       </component>
       <vspacer id="2be15">
         <constraints>
@@ -134,7 +143,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="DejaVu Sans Mono" size="18" style="1"/>
+        </properties>
       </component>
       <component id="ff0f8" class="javax.swing.JPasswordField" binding="pfConfirmPassword">
         <constraints>
@@ -142,7 +153,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="DejaVu Sans Mono" size="18" style="1"/>
+        </properties>
       </component>
       <component id="7af21" class="javax.swing.JButton" binding="btnCancel">
         <constraints>

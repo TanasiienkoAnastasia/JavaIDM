@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed7e4c35-04a8-41c3-bfaa-bdc351b61061" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mysql-connector-j-8.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RegistrationForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RegistrationForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RegistrationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RegistrationForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,12 +47,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "76",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "218",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/shepe/Documents/RepositoriesForGitHubTanasiienkoAnastasia/JavaIDM/src/main/java/mysql-connector-j-8.2.0.jar",
+    "last_opened_file_path": "C:/Users/shepe/Downloads/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0.jar",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -99,7 +109,7 @@
       <workItem from="1702386182725" duration="6250000" />
       <workItem from="1702463740736" duration="38000" />
       <workItem from="1702738379873" duration="2593000" />
-      <workItem from="1702742773264" duration="8390000" />
+      <workItem from="1702742773264" duration="16595000" />
     </task>
     <servers />
   </component>
