@@ -47,7 +47,20 @@ public class RegistrationForm extends JDialog {
         String password = String.valueOf(pfPassword.getPassword());
         String confirmPassword = String.valueOf(pfConfirmPassword.getPassword());
 
-            
+        if(name.isEmpty() || email.isEmpty() || address.isEmpty() || password.isEmpty()) {
+            JOptionPane.showMessageDialog(this,
+                    "Please enter all fields",
+                    "Try again",
+                    JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        if(!password.equals(confirmPassword)) {
+            JOptionPane.showMessageDialog(this,
+                    "Confirm Password does not match",
+                    "Try again",
+                    JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     public static void main(String[] args) {
