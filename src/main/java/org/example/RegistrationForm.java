@@ -2,6 +2,8 @@ package org.example;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class RegistrationForm extends JDialog {
     private JTextField tfName;
@@ -22,6 +24,30 @@ public class RegistrationForm extends JDialog {
         setModal(true);
         setLocationRelativeTo(parent);
         setVisible(true);
+        btnRegister.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                registerUser();
+            }
+        });
+        btnCancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
+        setVisible(true);
+    }
+
+    private void registerUser() {
+        String name = tfName.getText();
+        String email = tfEmail.getText();
+        String phone = tfPhone.getText();
+        String address = tfAddress.getText();
+        String password = String.valueOf(pfPassword.getPassword());
+        String confirmPassword = String.valueOf(pfConfirmPassword.getPassword());
+
+            
     }
 
     public static void main(String[] args) {
