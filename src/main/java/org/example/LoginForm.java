@@ -47,7 +47,15 @@ public class LoginForm extends JDialog {
         btnRegister.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                dispose();
+                RegistrationForm myForm = new RegistrationForm(null);
+                User user = myForm.user;
+                if(user != null){
+                    System.out.println("Seccessful registration of: " + user.name);
+                }
+                else {
+                    System.out.println("Registration canceled");
+                }
             }
         });
 
