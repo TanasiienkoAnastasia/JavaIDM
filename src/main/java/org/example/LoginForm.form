@@ -69,7 +69,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="DejaVu Sans Mono" size="18" style="1"/>
+        </properties>
       </component>
       <component id="b3253" class="javax.swing.JPasswordField" binding="pfPassword">
         <constraints>
@@ -77,7 +79,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="DejaVu Sans Mono" size="18" style="1"/>
+        </properties>
       </component>
       <component id="81f1b" class="javax.swing.JLabel">
         <constraints>
