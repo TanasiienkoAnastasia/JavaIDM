@@ -1,5 +1,11 @@
 package org.example;
 
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -101,19 +107,5 @@ public class LoginForm extends JDialog {
             e.printStackTrace();
         }
         return user;
-    }
-
-    public static void main(String[] args) {
-        LoginForm loginForm = new LoginForm(null);
-        User user = loginForm.user;
-
-        if(user != null){
-            System.out.println("Successful Authentication of: " + user.name);
-            System.out.println(" Email: " + user.email);
-            System.out.println(" Phone: " + user.phone);
-            System.out.println(" Address: " + user.address);
-        } else {
-            System.out.println("Authentication cancelled");
-        }
     }
 }

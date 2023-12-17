@@ -1,5 +1,7 @@
 package org.example;
 
+import javafx.application.Application;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

@@ -7,7 +7,10 @@
     <list default="true" id="ed7e4c35-04a8-41c3-bfaa-bdc351b61061" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RegistrationForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RegistrationForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RegistrationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RegistrationForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/downloadManager.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/downloadManager.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,9 +70,9 @@
       <recent name="C:\Users\shepe\Documents\RepositoriesForGitHubTanasiienkoAnastasia\JavaIDM\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LoginForm">
-    <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.LoginForm" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="JavaIDM" />
       <extension name="coverage">
         <pattern>
@@ -95,12 +98,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LoginForm" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.org.example.RegistrationForm" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoginForm" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.org.example.RegistrationForm" />
       </list>
     </recent_temporary>
@@ -126,7 +129,7 @@
       <workItem from="1702463740736" duration="38000" />
       <workItem from="1702738379873" duration="2593000" />
       <workItem from="1702742773264" duration="22632000" />
-      <workItem from="1702819341987" duration="2268000" />
+      <workItem from="1702819341987" duration="5299000" />
     </task>
     <servers />
   </component>
